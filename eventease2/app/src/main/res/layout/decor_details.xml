@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFE6F5"
+    android:backgroundTint="#FFFFE6F5"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your list of Professionals"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/amiri_bold"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"/>
+
+
+</LinearLayout>

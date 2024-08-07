@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFE6F5"
+    android:backgroundTint="#FFFFE6F5">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/p_pic"
+        android:layout_width="269dp"
+        android:layout_height="258dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="71dp"
+        android:src="@drawable/cat" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_pic"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="Venue:" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="email ID:" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="Phone no. :" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="Rating:" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="-17dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="Base Price:" />
+
+    <TextView
+        android:id="@+id/p_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_phone"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/textView15"
+        android:fontFamily="@font/amiri_bold"
+        android:text="anything/5" />
+
+    <TextView
+        android:id="@+id/p_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_rate"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/textView20"
+        android:fontFamily="@font/amiri_bold"
+        android:text="30K" />
+
+    <TextView
+        android:id="@+id/p_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_mail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/textView13"
+        android:fontFamily="@font/amiri_bold"
+        android:text="1234567890" />
+
+    <TextView
+        android:id="@+id/p_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_venue"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/textView11"
+        android:fontFamily="@font/amiri_bold"
+        android:text="yeh jo kuch bhi hai" />
+
+    <TextView
+        android:id="@+id/p_venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@+id/textView9"
+        android:fontFamily="@font/amiri_bold"
+        android:text="wherever he/she is" />
+
+    <TextView
+        android:id="@+id/p_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_pic"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:fontFamily="@font/amiri_bold"
+        android:text="Person Name" />
+
+    <Button
+        android:id="@+id/appoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="31dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="Book Appointment" />
+
+</RelativeLayout>

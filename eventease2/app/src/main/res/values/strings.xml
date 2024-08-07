@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">eventease</string>
+    <string-array name="events">
+        <item>Wedding</item>
+        <item>Birthday Party</item>
+        <item>Baby Shower</item>
+        <item>Wedding Anniversary</item>
+        <item>Death Anniversary</item>
+        <item>Kitty Party</item>
+        <item>other</item>
+    </string-array>
+</resources>

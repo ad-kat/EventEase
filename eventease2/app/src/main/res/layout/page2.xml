@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8E8EE"
+    android:backgroundTint="#F8E8EE"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/butdecor"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        app:layout_constraintBottom_toTopOf="@+id/butcater"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448">
+
+        <ImageButton
+            android:id="@+id/decorbut"
+            android:layout_width="228dp"
+            android:layout_height="332dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/decorimg" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/butcater"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/caterbut"
+            android:layout_width="178dp"
+            android:layout_height="238dp"
+            android:layout_gravity="center"
+            android:background="#FFD6A5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/catteringimg" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/butmakeup"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/butcater">
+
+        <ImageButton
+            android:id="@+id/makeupbut"
+            android:layout_width="322dp"
+            android:layout_height="261dp"
+            android:layout_gravity="center"
+            android:background="#E98EAD"
+            android:backgroundTint="#E98EAD"
+            android:scaleType="fitCenter"
+            android:src="@drawable/makeupimg" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/butphotograpy"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/butmakeup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448">
+
+        <ImageButton
+            android:id="@+id/photobut"
+            android:layout_width="322dp"
+            android:layout_height="235dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photographyimg" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="60dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="CATERING"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butcater" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="72dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="DECOR"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butdecor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="MAKEUP"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/butmakeup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="88dp"
+        android:fontFamily="@font/amiri_bold"
+        android:text="PHOTOGRAPHY"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/butphotograpy" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

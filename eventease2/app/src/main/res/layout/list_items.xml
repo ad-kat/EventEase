@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFE6F5"
+    android:backgroundTint="#FFFFE6F5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/p_pic"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/cat"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/personName"
+                    android:layout_width="234dp"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/amiri_bold"
+                    android:text="Jaanvi Dhakerey"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/Ratings"
+                    android:layout_width="234dp"
+                    android:layout_height="match_parent"
+                    android:text="Ratings: 4.5/5"
+
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#635656"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

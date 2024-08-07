@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add">
+
+    <RelativeLayout
+        android:id="@+id/widgetmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="-8dp"
+            android:layout_marginEnd="14dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:ems="10"
+            android:fontFamily="@font/amiri_bold"
+            android:hint="Name"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/amiri_bold"
+            android:text="Name:" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/amiri_bold"
+            android:text="event:" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="261dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="19dp"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <DatePicker
+            android:id="@+id/date"
+            android:layout_width="346dp"
+            android:layout_height="392dp"
+            android:layout_below="@+id/spinner"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:background="#FACBEA"
+            android:backgroundTint="#FACBEA" />
+
+        <Button
+            android:id="@+id/enterbtn"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="31dp"
+            android:background="#B0578D"
+            android:backgroundTint="#B0578D"
+            android:fontFamily="@font/amiri_bold"
+            android:text="enter details"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/enterevent"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="31dp"
+            android:background="#B0578D"
+            android:backgroundTint="#B0578D"
+            android:fontFamily="@font/amiri_bold"
+            android:text="Event Details"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/showbtn"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="68dp"
+            android:background="#B0578D"
+            android:backgroundTint="#B0578D"
+            android:backgroundTintMode="add"
+            android:fontFamily="@font/amiri_bold"
+            android:text="show existing details"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="604dp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
